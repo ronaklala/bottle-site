@@ -4,12 +4,15 @@ overflow:hidden;
 
 .product-image{
 height:240px;
-background:#d9d9d9;
 display:flex;
 justify-content:center;
 align-items:center;
 color:#777;
 font-size:1.2rem;
+}
+
+.product-image img {
+    height: 100%;
 }
 
 .product-content{

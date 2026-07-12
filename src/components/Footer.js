@@ -17,7 +17,7 @@ function Footer() {
         <div>
 
           <h2 className="footer-logo">
-            Bottle<span>Co</span>
+            Aquene
           </h2>
 
           <p>

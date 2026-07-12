@@ -13,7 +13,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar-container">
         <NavLink to="/" className="logo" onClick={closeMenu}>
-          Bottle<span>Co</span>
+          Aquene
         </NavLink>
 
         <nav className={menuOpen ? "nav-menu active" : "nav-menu"}>

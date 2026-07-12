@@ -8,7 +8,7 @@ function ProductCard({ product }) {
   return (
     <div className="product-card card">
       <div className="product-image">
-        <span>Image</span>
+        <img src = {product.image} />
       </div>
 
       <div className="product-content">
