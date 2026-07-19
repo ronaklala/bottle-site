@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 
 function ProductCard({ product }) {
-  const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/919023930002?text=${encodeURIComponent(
     `Hi, I am interested in ${product.name}.`
   )}`;
 

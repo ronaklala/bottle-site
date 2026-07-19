@@ -70,7 +70,7 @@ function Contact() {
 
                 <h3>Phone</h3>
 
-                <p>+91 99999 99999</p>
+                <p>+91 9023930002</p>
               </div>
 
               <div className="contact-card card">
@@ -78,7 +78,7 @@ function Contact() {
 
                 <h3>Email</h3>
 
-                <p>info@example.com</p>
+                <p>Support@aquenesip.com</p>
               </div>
 
               <div className="contact-card card">
@@ -86,7 +86,7 @@ function Contact() {
 
                 <h3>Address</h3>
 
-                <p>Your Business Address</p>
+                <p>K-47 Industrial Growth Center Bathinda punjab</p>
               </div>
 
             </div>

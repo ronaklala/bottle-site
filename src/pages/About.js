@@ -2,7 +2,8 @@ import {
   FaLeaf,
   FaIndustry,
   FaCheckCircle,
-  FaShieldAlt
+  FaShieldAlt,
+  FaTint // Added a water droplet icon for purity focus
 } from "react-icons/fa";
 
 import "./Pages.css";
@@ -20,77 +21,65 @@ function About() {
         <div className="container">
 
           <div className="info-card card">
-
             <h3>Who We Are</h3>
-
             <p>
-              We are a trusted manufacturer and supplier of premium quality
-              bottles for beverages, cosmetics, pharmaceuticals and industrial
-              packaging. Our focus is quality, durability and customer
-              satisfaction.
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+              We are a trusted manufacturer and supplier of premium quality bottle solutions 
+              integrated with an advanced multi-stage water purification system. Serving the 
+              beverage, cosmetic, pharmaceutical, and industrial packaging sectors, we deliver 
+              end-to-end excellence. We don't just provide the vessel; we guarantee unmatched purity inside it.
             </p>
-
+            <p style={{ marginTop: '15px' }}>
+              Our state-of-the-art facility utilizes high-grade sand filtration, activated charcoal 
+              absorption, micron-level multi-stage filtering, and advanced UV treatment to eliminate 
+              all contaminants. Finally, the water is enriched with essential healthy minerals like 
+              Magnesium and Potassium to guarantee a crisp, refreshing, and clean taste in every single bottle.
+            </p>
           </div>
 
           <br />
 
-          <h2 className="section-title">
-            Why Choose Us
-          </h2>
+          <h2 className="section-title">Why Choose Us</h2>
 
           <div className="grid grid-4">
 
             <div className="feature-card card">
               <div className="feature-icon">
+                <FaTint />
+              </div>
+              <h3>Certified Purity</h3>
+              <p>
+                Rigorous 5-stage treatment including UV and active charcoal for safe, pure water.
+              </p>
+            </div>
+
+            <div className="feature-card card">
+              <div className="feature-icon">
                 <FaCheckCircle />
               </div>
-
               <h3>Premium Materials</h3>
-
               <p>
-                High-quality raw materials ensuring durability.
+                Food-grade, durable raw materials ensuring long-lasting performance and zero leakage.
               </p>
-
             </div>
 
             <div className="feature-card card">
               <div className="feature-icon">
                 <FaIndustry />
               </div>
-
-              <h3>Modern Manufacturing</h3>
-
+              <h3>Modern Processing</h3>
               <p>
-                Advanced manufacturing techniques for consistent quality.
+                Advanced manufacturing and automated mineral enrichment for consistent high quality.
               </p>
-
             </div>
 
             <div className="feature-card card">
               <div className="feature-icon">
                 <FaLeaf />
               </div>
-
-              <h3>Eco Friendly</h3>
-
+              <h3>Eco-Friendly Focus</h3>
               <p>
-                Sustainable production practices with reduced waste.
+                Sustainable packaging options and environmentally responsible production practices.
               </p>
-
-            </div>
-
-            <div className="feature-card card">
-              <div className="feature-icon">
-                <FaShieldAlt />
-              </div>
-
-              <h3>Reliable Service</h3>
-
-              <p>
-                Customer-focused support and dependable delivery.
-              </p>
-
             </div>
 
           </div>
