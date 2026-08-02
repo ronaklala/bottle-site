@@ -1,33 +1,34 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  FaChevronLeft,
-  FaChevronRight
-} from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import "./HeroCarousel.css";
 
 const slides = [
   {
-    title: "Premium Bottle Solutions",
+    title: "URBAN QUALITY",
     subtitle:
       "High-quality bottles designed for beverages, cosmetics and industrial packaging.",
-    background:
-      "linear-gradient(rgba(20,40,60,.55), rgba(20,40,60,.55)), linear-gradient(135deg,#4F86C6,#1F4E79)"
+    // Replace the URL with your imported image variable, e.g., backgroundImage: urbanImg
+    backgroundImage: "https://res.cloudinary.com/ronaklala-games/image/upload/v1785698663/aquaspene/Gemini_Generated_Image_e0cmxre0cmxre0cm_cjzogy.png", 
   },
   {
-    title: "Elegant & Durable Packaging",
+    title: "PURE NATURE",
     subtitle:
       "Modern bottle designs built with quality materials for every business.",
-    background:
-      "linear-gradient(rgba(20,40,60,.55), rgba(20,40,60,.55)), linear-gradient(135deg,#5DADE2,#2874A6)"
+    backgroundImage: "https://res.cloudinary.com/ronaklala-games/image/upload/v1785698680/aquaspene/Gemini_Generated_Image_diytp3diytp3diyt_vu80pb.png",
   },
   {
-    title: "Trusted Manufacturing Partner",
+    title: "MINIMALIST & PREMIUM",
     subtitle:
       "Reliable production, premium quality and fast delivery for businesses worldwide.",
-    background:
-      "linear-gradient(rgba(20,40,60,.55), rgba(20,40,60,.55)), linear-gradient(135deg,#2E86C1,#154360)"
+    backgroundImage: "https://res.cloudinary.com/ronaklala-games/image/upload/v1785698939/aquaspene/Gemini_Generated_Image_1vkifm1vkifm1vki_ujlhgj.png",
+  },
+  {
+    title: "WELLNESS & CALM",
+    subtitle:
+      "Reliable production, premium quality and fast delivery for businesses worldwide.",
+    backgroundImage: "https://res.cloudinary.com/ronaklala-games/image/upload/v1785699143/aquaspene/Gemini_Generated_Image_21iq321iq321iq32_zwi7os.png",
   }
 ];
 
@@ -63,7 +64,11 @@ function HeroCarousel() {
               : "hero-slide"
           }
           style={{
-            background: slide.background
+            // Merging a dark gradient overlay with the background image for text readability
+            backgroundImage: `linear-gradient(rgba(20,40,60,0.6), rgba(20,40,60,0.6)), url(${slide.backgroundImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat"
           }}
         >
           <div className="container hero-content">
